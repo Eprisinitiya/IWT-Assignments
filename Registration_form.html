@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250vh;
+        }
+        .registration-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 700px;
+            margin: 20px;
+        }
+        .registration-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .registration-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .registration-form input,
+        .registration-form select,
+        .registration-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .registration-form textarea {
+            resize: vertical;
+        }
+        .registration-form button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4699eb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .registration-form button:hover {
+            background-color: #1980e5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="registration-form">
+    <h2>Student Registration Form</h2>
+    <form action="#" method="POST">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+        
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" required>
+        
+        <label for="major">Intended Major:</label>
+        <input type="text" id="major" name="major" required>
+        
+        <label for="enrollment-year">Enrollment Year:</label>
+        <select id="enrollment-year" name="enrollment-year" required>
+            <option value="">Select enrollment year</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select>
+        
+        <label for="high-school">High School Attended:</label>
+        <input type="text" id="high-school" name="high-school" required>
+        
+        <label for="activities">Extracurricular Activities:</label>
+        <textarea id="activities" name="activities" rows="4" placeholder="List any extracurricular activities..."></textarea>
+        
+        <label for="referral">How did you hear about us?</label>
+        <select id="referral" name="referral">
+            <option value="">Select an option</option>
+            <option value="internet">Internet</option>
+            <option value="friend">Friend</option>
+            <option value="advertisement">Advertisement</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
