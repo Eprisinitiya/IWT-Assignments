@@ -32,8 +32,8 @@ function showError(error) {
 }
 
 function fetchWeatherData(lat, lon) {
-    const openWeatherMapApiKey = 'be7f5bb3b7e2d2a8247cffbf76e7dc68';
-    const tomorrowIoApiKey = 'egCiKMY5HyA9MKlMHWiYie2T5FAonlHK';
+    const openWeatherMapApiKey = '';
+    const tomorrowIoApiKey = '';
 
     // Fetch data from OpenWeatherMap API
     const openWeatherMapUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${openWeatherMapApiKey}`;
